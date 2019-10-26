@@ -1700,3 +1700,9 @@ Stacktrace:
 2019-10-26 23:59:26,158 - [process.py: 111] -INFO: id ： 21853      |  关键字： 前往                   |  步骤：前往|http://www.baidu.com                                      | 命令： driver.get("http://www.baidu.com")
 2019-10-26 23:59:26,672 - [process.py: 111] -INFO: id ： 21853      |  关键字： 填写                   |  步骤：填写|id@@kw@@selenium                                          | 命令： extend.extend().fill(driver,["id","kw"],"selenium")
 2019-10-26 23:59:26,974 - [process.py: 48] -INFO: id is 21853, result is 1, stepname is no comed to run!
+2019-10-27 01:48:30,511 - [process.py: 111] -INFO: id ： 21854      |  关键字： 前往                   |  步骤：前往|http://www.baidu.com                                      | 命令： driver.get("http://www.baidu.com")
+2019-10-27 01:48:31,338 - [process.py: 111] -INFO: id ： 21854      |  关键字： 点击                   |  步骤：点击|id@@su                                                    | 命令： extend.extend().find_element(driver,["id","su"]).click()
+2019-10-27 01:48:31,523 - [process.py: 48] -INFO: id is 21854, result is 1, stepname is no comed to run!
+2019-10-27 02:30:57,931 - [process.py: 111] -INFO: id ： 21854      |  关键字： 前往                   |  步骤：前往|http://www.baidu.com                                      | 命令： driver.get("http://www.baidu.com")
+2019-10-27 02:30:58,782 - [process.py: 111] -INFO: id ： 21854      |  关键字： 点击                   |  步骤：点击|id@@su                                                    | 命令： extend.extend().find_element(driver,["id","su"]).click()
+2019-10-27 02:30:58,961 - [process.py: 48] -INFO: id is 21854, result is 1, stepname is no comed to run!

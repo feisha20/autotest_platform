@@ -151,7 +151,7 @@ var TableInit = function (test_case_id) {
                 checkbox: true
             }, {
                 field: 'id',
-                title: 'id'
+                title: 'ID'
             }, {
                 field: 'test_suite_id',
                 title: '用例集ID'
