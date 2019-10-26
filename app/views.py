@@ -8,7 +8,7 @@ from app import app
 def index():
     list = session.get('user', None)
     username = list[0]["username"]
-    return render_template("util/index.html", message='Hello, %s' % username)
+    return render_template("util/index_1.html", message='Hello, %s' % username)
 
 @app.route('/test')
 def index1():

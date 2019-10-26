@@ -7,3 +7,5 @@
 2019-10-26 00:53:27,629 - [useDB.py: 71] -DEBUG: update test_batch set status = 4 where id = 21856 ;
 2019-10-26 00:53:27,629 - [useDB.py: 71] -DEBUG: update test_batch set status = 4 where id = 21856 ;
 2019-10-26 00:54:45,878 - [useDB.py: 71] -DEBUG: update test_batch set status = 4 where id = 21855 ;
+2019-10-26 23:46:21,721 - [useDB.py: 71] -DEBUG: update test_batch set status = 4 where id = 21852 ;
+2019-10-26 23:52:50,874 - [useDB.py: 71] -DEBUG: update test_batch set status = 4 where id = 21853 ;

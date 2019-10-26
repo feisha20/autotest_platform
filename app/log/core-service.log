@@ -1361,3 +1361,342 @@ Stacktrace:
 2019-10-26 07:37:28,771 - [process.py: 111] -INFO: id ： 21859      |  关键字： 填写                   |  步骤：填写|id@@password@@123456                                      | 命令： extend.extend().fill(driver,["id","password"],"123456")
 2019-10-26 07:37:29,101 - [process.py: 111] -INFO: id ： 21859      |  关键字： 等待                   |  步骤：等待|3                                                         | 命令： extend.extend().wait(3)
 2019-10-26 07:37:32,814 - [process.py: 48] -INFO: id is 21859, result is 1, stepname is no comed to run!
+2019-10-26 14:04:47,184 - [hubs.py: 40] -INFO: add new hub to available: 127.0.0.1:4444, 0
+2019-10-26 23:46:21,734 - [process.py: 27] -INFO: 开始执行 id ： 21852      | 用例 ：Chrome,前往|http://www.baidu.com 
+2019-10-26 23:46:21,948 - [coredriver.py: 56] -INFO: Message: Unable to create new service: ChromeDriverService
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T21:30:10'
+System info: host: 'WIN10-711272358', ip: '192.168.61.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+Stacktrace:
+    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.lambda$get$0 (ServicedSession.java:137)
+    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply (ServicedSession.java:153)
+    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply (ServicedSession.java:90)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12 (ActiveSessionFactory.java:179)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$11$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.apply (ActiveSessionFactory.java:182)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.apply (ActiveSessionFactory.java:57)
+    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2 (NewSessionPipeline.java:66)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.Collections$2.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3 (NewSessionPipeline.java:73)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.DistinctOps$1$2.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.stream.Streams$StreamBuilderImpl.tryAdvance (None:-1)
+    at java.util.stream.Streams$ConcatSpliterator.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession (NewSessionPipeline.java:76)
+    at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute (BeginSession.java:64)
+    at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0 (WebDriverServlet.java:231)
+    at java.util.concurrent.Executors$RunnableAdapter.call (None:-1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2019-10-26 23:46:22,000 - [coredriver.py: 56] -INFO: Message: Unable to create new service: ChromeDriverService
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T21:30:10'
+System info: host: 'WIN10-711272358', ip: '192.168.61.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+Stacktrace:
+    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.lambda$get$0 (ServicedSession.java:137)
+    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply (ServicedSession.java:153)
+    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply (ServicedSession.java:90)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12 (ActiveSessionFactory.java:179)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$11$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.apply (ActiveSessionFactory.java:182)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.apply (ActiveSessionFactory.java:57)
+    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2 (NewSessionPipeline.java:66)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.Collections$2.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3 (NewSessionPipeline.java:73)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.DistinctOps$1$2.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.stream.Streams$StreamBuilderImpl.tryAdvance (None:-1)
+    at java.util.stream.Streams$ConcatSpliterator.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession (NewSessionPipeline.java:76)
+    at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute (BeginSession.java:64)
+    at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0 (WebDriverServlet.java:231)
+    at java.util.concurrent.Executors$RunnableAdapter.call (None:-1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2019-10-26 23:46:22,002 - [process.py: 61] -INFO: cannot run without available hubs!
+2019-10-26 23:46:22,004 - [process.py: 48] -INFO: id is 21852, result is 3, stepname is init
+2019-10-26 23:47:52,207 - [process.py: 27] -INFO: 开始执行 id ： 21852      | 用例 ：Chrome,前往|http://www.baidu.com 
+2019-10-26 23:47:55,669 - [coredriver.py: 56] -INFO: Message: session not created: This version of ChromeDriver only supports Chrome version 78
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T21:30:10'
+System info: host: 'WIN10-711272358', ip: '192.168.61.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00ADA903+1550595]
+	Ordinal0 [0x00A5A701+1025793]
+	Ordinal0 [0x009DC6E5+509669]
+	Ordinal0 [0x0096FC68+64616]
+	Ordinal0 [0x0096C594+50580]
+	Ordinal0 [0x0098ACE7+175335]
+	Ordinal0 [0x0098A8ED+174317]
+	Ordinal0 [0x00988CDB+167131]
+	Ordinal0 [0x0097144A+70730]
+	Ordinal0 [0x009724D0+74960]
+	Ordinal0 [0x00972469+74857]
+	Ordinal0 [0x00A742C7+1131207]
+	GetHandleVerifier [0x00B770FD+523789]
+	GetHandleVerifier [0x00B76E90+523168]
+	GetHandleVerifier [0x00B7E1E7+552695]
+	GetHandleVerifier [0x00B778FA+525834]
+	Ordinal0 [0x00A6B7FC+1095676]
+	Ordinal0 [0x00A7633B+1139515]
+	Ordinal0 [0x00A764A3+1139875]
+	Ordinal0 [0x00A75425+1135653]
+	BaseThreadInitThunk [0x73F18494+36]
+	RtlAreBitsSet [0x774141C8+136]
+	RtlAreBitsSet [0x77414198+88]
+
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0 (W3CHandshakeResponse.java:62)
+    at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0 (HandshakeResponse.java:30)
+    at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1 (ProtocolHandshake.java:127)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.ProtocolHandshake.createSession (ProtocolHandshake.java:129)
+    at org.openqa.selenium.remote.ProtocolHandshake.createSession (ProtocolHandshake.java:75)
+    at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake (RemoteSession.java:142)
+    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply (ServicedSession.java:162)
+    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply (ServicedSession.java:90)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12 (ActiveSessionFactory.java:179)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$11$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.apply (ActiveSessionFactory.java:182)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.apply (ActiveSessionFactory.java:57)
+    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2 (NewSessionPipeline.java:66)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.Collections$2.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3 (NewSessionPipeline.java:73)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.DistinctOps$1$2.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.stream.Streams$StreamBuilderImpl.tryAdvance (None:-1)
+    at java.util.stream.Streams$ConcatSpliterator.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession (NewSessionPipeline.java:76)
+    at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute (BeginSession.java:64)
+    at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0 (WebDriverServlet.java:231)
+    at java.util.concurrent.Executors$RunnableAdapter.call (None:-1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2019-10-26 23:47:57,652 - [coredriver.py: 56] -INFO: Message: session not created: This version of ChromeDriver only supports Chrome version 78
+Build info: version: '4.0.0-alpha-2', revision: 'f148142cf8', time: '2019-07-01T21:30:10'
+System info: host: 'WIN10-711272358', ip: '192.168.61.1', os.name: 'Windows 10', os.arch: 'x86', os.version: '10.0', java.version: '1.8.0_144'
+Driver info: driver.version: unknown
+remote stacktrace: Backtrace:
+	Ordinal0 [0x00ADA903+1550595]
+	Ordinal0 [0x00A5A701+1025793]
+	Ordinal0 [0x009DC6E5+509669]
+	Ordinal0 [0x0096FC68+64616]
+	Ordinal0 [0x0096C594+50580]
+	Ordinal0 [0x0098ACE7+175335]
+	Ordinal0 [0x0098A8ED+174317]
+	Ordinal0 [0x00988CDB+167131]
+	Ordinal0 [0x0097144A+70730]
+	Ordinal0 [0x009724D0+74960]
+	Ordinal0 [0x00972469+74857]
+	Ordinal0 [0x00A742C7+1131207]
+	GetHandleVerifier [0x00B770FD+523789]
+	GetHandleVerifier [0x00B76E90+523168]
+	GetHandleVerifier [0x00B7E1E7+552695]
+	GetHandleVerifier [0x00B778FA+525834]
+	Ordinal0 [0x00A6B7FC+1095676]
+	Ordinal0 [0x00A7633B+1139515]
+	Ordinal0 [0x00A764A3+1139875]
+	Ordinal0 [0x00A75425+1135653]
+	BaseThreadInitThunk [0x73F18494+36]
+	RtlAreBitsSet [0x774141C8+136]
+	RtlAreBitsSet [0x77414198+88]
+
+Stacktrace:
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance0 (None:-2)
+    at sun.reflect.NativeConstructorAccessorImpl.newInstance (None:-1)
+    at sun.reflect.DelegatingConstructorAccessorImpl.newInstance (None:-1)
+    at java.lang.reflect.Constructor.newInstance (None:-1)
+    at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$errorHandler$0 (W3CHandshakeResponse.java:62)
+    at org.openqa.selenium.remote.HandshakeResponse.lambda$getResponseFunction$0 (HandshakeResponse.java:30)
+    at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$1 (ProtocolHandshake.java:127)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.ProtocolHandshake.createSession (ProtocolHandshake.java:129)
+    at org.openqa.selenium.remote.ProtocolHandshake.createSession (ProtocolHandshake.java:75)
+    at org.openqa.selenium.grid.session.remote.RemoteSession$Factory.performHandshake (RemoteSession.java:142)
+    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply (ServicedSession.java:162)
+    at org.openqa.selenium.grid.session.remote.ServicedSession$Factory.apply (ServicedSession.java:90)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.lambda$apply$12 (ActiveSessionFactory.java:179)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$11$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.Spliterators$ArraySpliterator.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.apply (ActiveSessionFactory.java:182)
+    at org.openqa.selenium.remote.server.ActiveSessionFactory.apply (ActiveSessionFactory.java:57)
+    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$null$2 (NewSessionPipeline.java:66)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.Collections$2.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.server.NewSessionPipeline.lambda$createNewSession$3 (NewSessionPipeline.java:73)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.DistinctOps$1$2.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$3$1.accept (None:-1)
+    at java.util.stream.ReferencePipeline$2$1.accept (None:-1)
+    at java.util.stream.Streams$StreamBuilderImpl.tryAdvance (None:-1)
+    at java.util.stream.Streams$ConcatSpliterator.tryAdvance (None:-1)
+    at java.util.stream.ReferencePipeline.forEachWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyIntoWithCancel (None:-1)
+    at java.util.stream.AbstractPipeline.copyInto (None:-1)
+    at java.util.stream.AbstractPipeline.wrapAndCopyInto (None:-1)
+    at java.util.stream.FindOps$FindOp.evaluateSequential (None:-1)
+    at java.util.stream.AbstractPipeline.evaluate (None:-1)
+    at java.util.stream.ReferencePipeline.findFirst (None:-1)
+    at org.openqa.selenium.remote.server.NewSessionPipeline.createNewSession (NewSessionPipeline.java:76)
+    at org.openqa.selenium.remote.server.commandhandler.BeginSession.execute (BeginSession.java:64)
+    at org.openqa.selenium.remote.server.WebDriverServlet.lambda$handle$0 (WebDriverServlet.java:231)
+    at java.util.concurrent.Executors$RunnableAdapter.call (None:-1)
+    at java.util.concurrent.FutureTask.run (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor.runWorker (None:-1)
+    at java.util.concurrent.ThreadPoolExecutor$Worker.run (None:-1)
+    at java.lang.Thread.run (None:-1)
+2019-10-26 23:47:57,662 - [process.py: 61] -INFO: cannot run without available hubs!
+2019-10-26 23:47:57,663 - [process.py: 48] -INFO: id is 21852, result is 3, stepname is init
+2019-10-26 23:50:18,074 - [hubs.py: 22] -INFO: update hub to unavailable: 127.0.0.1
+2019-10-26 23:52:39,154 - [hubs.py: 45] -INFO: update hub to available: 127.0.0.1:4444,0
+2019-10-26 23:52:50,888 - [process.py: 27] -INFO: 开始执行 id ： 21853      | 用例 ：Chrome,前往|http://www.baidu.com 
+2019-10-26 23:53:02,394 - [process.py: 48] -INFO: id is 21853, result is 3, stepname is no steps!
+2019-10-26 23:53:08,483 - [process.py: 27] -INFO: 开始执行 id ： 21853      | 用例 ：Chrome,前往|http://www.baidu.com 
+2019-10-26 23:53:18,518 - [process.py: 48] -INFO: id is 21853, result is 3, stepname is no steps!
+2019-10-26 23:53:24,569 - [process.py: 27] -INFO: 开始执行 id ： 21853      | 用例 ：Chrome,前往|http://www.baidu.com 
+2019-10-26 23:53:34,519 - [process.py: 48] -INFO: id is 21853, result is 3, stepname is no steps!
+2019-10-26 23:57:59,011 - [process.py: 27] -INFO: 开始执行 id ： 21853      | 用例 ：Chrome,前往|http://www.baidu.com 
+2019-10-26 23:58:10,021 - [process.py: 48] -INFO: id is 21853, result is 3, stepname is no steps!
+2019-10-26 23:59:16,231 - [process.py: 27] -INFO: 开始执行 id ： 21853      | 用例 ：Chrome,前往|http://www.baidu.com,填写|id@@kw@@selenium 
+2019-10-26 23:59:26,158 - [process.py: 111] -INFO: id ： 21853      |  关键字： 前往                   |  步骤：前往|http://www.baidu.com                                      | 命令： driver.get("http://www.baidu.com")
+2019-10-26 23:59:26,672 - [process.py: 111] -INFO: id ： 21853      |  关键字： 填写                   |  步骤：填写|id@@kw@@selenium                                          | 命令： extend.extend().fill(driver,["id","kw"],"selenium")
+2019-10-26 23:59:26,974 - [process.py: 48] -INFO: id is 21853, result is 1, stepname is no comed to run!
