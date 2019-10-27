@@ -58,7 +58,7 @@
                     <div class="panel-heading">查询条件</div>
                     <div class="form-group" style="margin-top:15px">
                         <label for="type" class="control-label col-sm-1">执行类型</label>
-                        <div class="col-sm-1">
+                        <div class="col-sm-2">
                             <select class="form-control required" name="type" id="type"
                                     onchange="if(this.value != '') setModule(this.options[this.selectedIndex].value);">
                                 <option value="">-请选择-</option>
@@ -67,23 +67,23 @@
                             </select>
                         </div>
 
-                        <label class="control-label col-sm-1" for="module">模块</label>
-                        <div class="col-sm-1">
-                            <select class="form-control required" multiple name="module" id="module">
+                        <label class="control-label col-sm-1" for="module" hidden>模块</label>
+                        <div class="col-sm-2" hidden>
+                            <select class="form-control required" multiple name="module" id="module" hidden>
                                 <option value="">-请选择-</option>
                             </select>
                         </div>
                         <label class="control-label col-sm-1" for="casename1">名称</label>
-                        <div class="col-sm-1">
+                        <div class="col-sm-2">
                             <input type="text" class="form-control" id="casename1" size="20">
                         </div>
-                        <label class="control-label col-sm-1" for="ipList" id="ipListLabel">设备列表</label>
-                        <div class="col-sm-1">
-                            <select class="form-control required" multiple name="ipList" id="ipList">
-                            </select>
-                        </div>
-                        <label class="control-label col-sm-1" for="browserList">浏览器列表</label>
-                        <div class="col-sm-1">
+                        <!--<label class="control-label col-sm-1" for="ipList" id="ipListLabel">设备列表</label>-->
+                        <!--<div class="col-sm-1">-->
+                            <!--<select class="form-control required" multiple name="ipList" id="ipList">-->
+                            <!--</select>-->
+                        <!--</div>-->
+                        <label class="control-label col-sm-1" for="browserList">浏览器</label>
+                        <div class="col-sm-2">
                             <select class="form-control required" multiple name="browserList" id="browserList">
                                 <option value="" selected="selected">-请选择-</option>
                                 <option value="Chrome">Chrome</option>
@@ -96,7 +96,7 @@
                                     onclick="return searchTestBatch1({{id}})">查询
                             </button>
                             <button id="btn_reset1" type="button" class="btn btn-default"
-                                    onclick="return initPage({{id}})">重置
+                                    onclick="return initPage({{id}})" >重置
                             </button>
                             <button id="btn_run_all" type="button" class="btn btn-default"
                                     onclick="window.location.href=('/test_batch_detail?test_suite_id={{id}}')">执行情况
