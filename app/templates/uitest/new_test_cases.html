@@ -76,13 +76,13 @@
                             <h5>步骤代码： </h5>
                             <textarea type="longtext" class="form-control" id="step" readonly="readonly" cols="10"
                                       rows="5"></textarea>
-                            <table id="stepsTable" border="1" cellspacing="10">
+                            <table id="stepsTable" border="1" cellspacing="10" class="white_table">
                                 <thead>
                                 <tr>
-                                    <th >操作</th>
+                                    <th width="120">操作</th>
                                     <th >关键字</th>
                                     <th >参数1</th>
-                                    <th >参数2</th>
+                                    <th width="20%">参数2</th>
                                     <th >参数3</th>
                                     <th >参数4</th>
                                     <th >步骤</th>
@@ -116,8 +116,16 @@
 }
 .black_overlay{ display: none; position: absolute; top: 0%; left: 10%; width: 90%; height: 100%; background-color: black; z-index:1001; -moz-opacity: 0.6; opacity:.60; filter: alpha(opacity=60); }
 .white_content { display: none; position: absolute; top: 0%; left: 10%; width: 90%; height: 100%; padding: 16px; border: 2px solid green; background-color: white; z-index:1002; overflow: auto; }
+.white_table td {
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+.white_table table{
 
-
+}
+.white_table th{
+    white-space: nowrap
+}
     </style>
     </form>
 </div>
