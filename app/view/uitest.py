@@ -79,7 +79,9 @@ def edit_test_case():
             else:
                 isPublic = 0
             test_case_manage.test_case_manage().update_test_case(id, ['module', 'name', 'steps', 'description', 'isPublicFunction'], [module, name, steps, description, isPublic])
-            return render_template("uitest/test_batch2.html",id=id,type='test_suite')
+            # return render_template("uitest/test_batch2.html",id=id,type='test_suite') # modify by tang
+            return redirect('test_cases')
+
 
 @mod.route('/copy_test_case', methods=['POST', 'GET'])
 @user.authorize
