@@ -100,16 +100,19 @@ var TableInit = function (test_suite_id) {
                 checkbox: true
             }, {
                 field: 'id',
-                title: 'id'
+                title: 'id',
+                width: "5%"
             },{
                 field: 'module',
-                title: '模块'
+                title: '模块',
+                width: "10%"
             },{
                 field: 'name',
                 title: '名称'
             }, {
                 field: 'steps',
-                title: '步骤'
+                title: '步骤',
+                width: "30%"
             }, {
                 field: 'description',
                 title: '描述'

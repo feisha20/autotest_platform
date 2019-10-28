@@ -4,16 +4,16 @@
 
 {% block head %}
 <meta name="viewport" content="width=device-width"/>
-<script src="../static/jquery-1.12.4.js"></script>
-<script src="../static/scripts/util/init.js"></script>
-<script src="../static/scripts/util/util.js"></script>
-<script src="../static/scripts/core/attach_test_batch.js"></script>
+<script src="../../static/jquery-1.12.4.js"></script>
+<script src="../../static/scripts/util/init.js"></script>
+<script src="../../static/scripts/util/util.js"></script>
+<script src="../../static/scripts/core/attach_test_batch.js"></script>
 
-<script src="../static/bootstrap-3.3.7-dist/dist/js/bootstrap.js"></script>
-<link href="../static/bootstrap-3.3.7-dist/dist/css/bootstrap.css" rel="stylesheet"/>
+<script src="../../static/bootstrap-3.3.7-dist/dist/js/bootstrap.js"></script>
+<link href="../../static/bootstrap-3.3.7-dist/dist/css/bootstrap.css" rel="stylesheet"/>
 
-<script src="../static/bootstrap-table-develop/dist/bootstrap-table.js"></script>
-<link href="../static/bootstrap-table-develop/dist/bootstrap-table.css" rel="stylesheet"/>
+<script src="../../static/bootstrap-table-develop/dist/bootstrap-table.js"></script>
+<link href="../../static/bootstrap-table-develop/dist/bootstrap-table.css" rel="stylesheet"/>
 <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
 <script>window.onload = function () {
     <!--document.getElementById('btn_reset').click();-->
@@ -21,6 +21,17 @@
     document.getElementById('btn_query1').click();
     <!--document.getElementsByName('refresh')[0].click();-->
 }</script>
+
+<style type="text/css">
+	table {
+        table-layout:fixed;
+    }
+    .table td{
+        overflow:hidden;
+        text-overflow:ellipsis;
+        white-space:nowrap;
+    }
+</style>
 
 {% endblock %}
 {% block content %}
@@ -67,8 +78,11 @@
 
                         <label class="control-label col-sm-1" for="module">模块</label>
                         <div class="col-sm-2">
-                            <select class="form-control required" multiple name="module" id="module">
+                            <select class="form-control required" name="module" id="module">
                                 <option value="">-请选择-</option>
+                                <option value="模块1">模块1</option>
+                                <option value="模块2">模块2</option>
+                                <option value="模块3">模块3</option>
                             </select>
                         </div>
                         <label class="control-label col-sm-1" for="casename1">名称</label>

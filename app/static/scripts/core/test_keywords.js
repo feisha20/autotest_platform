@@ -64,19 +64,23 @@ var TableInit = function () {
                 checkbox: true
             }, {
                 field: 'id',
-                title: 'id'
+                title: 'id',
+                width: "5%"
             },  {
                 field: 'keyword',
-                title: '名称'
+                title: '名称',
+                width: "10%"
             },{
                 field: 'description',
-                title: '说明'
+                title: '说明',
+                width: "30%"
             },{
                 field: 'paraCount',
-                title: '参数数量'
+                title: '参数数量',
+                width: "5%"
             }, {
                 field: 'template',
-                title: '模板'
+                title: '模板',
             }, {
                 field: 'example',
                 title: '例子'
@@ -85,6 +89,7 @@ var TableInit = function () {
                 field: 'operate',
                 title: '操作',
                 align: 'center',
+                 width: "15%",
                 formatter: function (value, row, index) {
                         var a = '<a href="javascript:;" onclick="window.location.href=(\'/edit_test_keyword?id='+ row.id + '\')">编辑</a> ';
                         var b = '<a href="javascript:;" onclick="copy_test_keyword(\'' + row.id + '\')">复制</a> ';
