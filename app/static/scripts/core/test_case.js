@@ -49,29 +49,32 @@ var TableInit = function () {
             pageList: [10, 25, 50, 100, 500],        //可供选择的每页的行数（*）
             search: false,                       //是否显示表格搜索，此搜索是客户端搜索，不会进服务端，所以，个人感觉意义不大
             strictSearch: false,
-            showColumns: true,                  //是否显示所有的列
-            showRefresh: true,                  //是否显示刷新按钮
+            showColumns: false,                  //是否显示所有的列
+            showRefresh: false,                  //是否显示刷新按钮
             minimumCountColumns: 2,             //最少允许的列数
             clickToSelect: true,                //是否启用点击选中行
             height: 500,                        //行高，如果没有设置height属性，表格自动根据记录条数觉得表格高度
             uniqueId: "id",                     //每一行的唯一标识，一般为主键列
-            showToggle:true,                    //是否显示详细视图和列表视图的切换按钮
+            showToggle:false,                    //是否显示详细视图和列表视图的切换按钮
             cardView: false,                    //是否显示详细视图
             detailView: false,                   //是否显示父子表
             columns: [{
                 checkbox: true
             }, {
                 field: 'id',
-                title: 'id'
+                title: 'id',
+                width: "5%"
             }, {
                 field: 'module',
-                title: '模块'
+                title: '模块',
+                width: "10%"
             }, {
                 field: 'name',
                 title: '名称'
             }, {
                 field: 'steps',
-                title: '步骤'
+                title: '步骤',
+                width: "20%"
             }, {
                 field: 'description',
                 title: '描述'
@@ -80,6 +83,7 @@ var TableInit = function () {
                 field: 'operate',
                 title: '操作',
                 align: 'center',
+                 width:'20%',
                 formatter: function (value, row, index) {
                         var a = '<a href="javascript:;" onclick="window.location.href=(\'/edit_test_case?id='+ row.id + '\')">编辑</a> ';
                         var b = '<a href="javascript:;" onclick="copy_test_case(\'' + row.id + '\')">复制</a> ';
