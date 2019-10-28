@@ -58,28 +58,34 @@ var TableInit = function () {
             }, {
                 field: 'id',
                 title: 'id',
-                width : '10'
             }, {
                 field: 'product',
                 title: '所属产品',
-                width : '20'
             }, {
                 field: 'module',
                 title: '模块',
-                width : '20'
             }, {
                 field: 'name',
                 title: '接口名称',
-                width : '20'
             }, {
                 field: 'url',
                 title: '接口地址',
-                width : '20'
             },
+            //  {
+            //     field: 'osign_list',
+            //     title: '加密参数列表',
+            // },
+                {
+                field: 'description',
+                title: '备注'
+            },
+            //     {
+            //     field: 'paras',
+            //     title: '参数列表'
+            // },
              {
                 field: 'operate',
                 title: '操作',
-//                align: 'center',
                 formatter: function (value, row, index) {
                         var a = '<a href="javascript:;" onclick="window.location.href=(\'/edit_test_api_new?id='+ row.id + '\')">编辑</a> ';
                          var d = '<a href="javascript:;" onclick="window.location.href=(\'/test_api_new_test?id='+ row.id + '\')">测试</a> ';
@@ -88,20 +94,6 @@ var TableInit = function () {
                         return div;
                         }
                 },
-             {
-                field: 'osign_list',
-                title: '加密参数列表',
-                width : '50'
-            },{
-                field: 'description',
-                title: '备注'
-//                width : '50'
-            },
-                {
-                field: 'paras',
-                title: '参数列表'
-//                width : '50'
-            }
 
                 ]
         });
