@@ -15,13 +15,12 @@
 <script src="../static/bootstrap-table-develop/dist/bootstrap-table.js"></script>
 <link href="../static/bootstrap-table-develop/dist/bootstrap-table.css" rel="stylesheet"/>
 <script src="http://static.runoob.com/assets/jquery-validation-1.14.0/dist/jquery.validate.min.js"></script>
-<script>window.onload =function(){
-            <!--document.getElementById('btn_reset').click();-->
-            document.getElementById('btn_reset1').click();
-            document.getElementById('btn_query1').click();
-            <!--document.getElementsByName('refresh')[0].click();-->
-            }
-</script>
+<script>window.onload = function () {
+    <!--document.getElementById('btn_reset').click();-->
+    document.getElementById('btn_reset1').click();
+    document.getElementById('btn_query1').click();
+    <!--document.getElementsByName('refresh')[0].click();-->
+}</script>
 
 {% endblock %}
 {% block content %}
@@ -29,7 +28,6 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-12">
-
                 <h1 style="text-align:center">关联测试用例</h1>
                 <font color="red"> 注意： 执行类型为 Chrome 时，不能关联 android 模块的用例， 否则无法执行！</font>
                 <form class="form-horizontal" id="new_test_suite" action="/edit_test_suite" method="post">
@@ -57,8 +55,8 @@
                 <form id="formSearch1" class="form-horizontal">
                     <div class="panel-heading">查询条件</div>
                     <div class="form-group" style="margin-top:15px">
-                        <label for="type" class="control-label col-sm-1">执行类型</label>
-                        <div class="col-sm-2">
+                        <label for="type" class="control-label col-sm-1" hidden>执行类型</label>
+                        <div class="col-sm-1" hidden>
                             <select class="form-control required" name="type" id="type"
                                     onchange="if(this.value != '') setModule(this.options[this.selectedIndex].value);">
                                 <option value="">-请选择-</option>
@@ -67,9 +65,9 @@
                             </select>
                         </div>
 
-                        <label class="control-label col-sm-1" for="module" hidden>模块</label>
-                        <div class="col-sm-2" hidden>
-                            <select class="form-control required" multiple name="module" id="module" hidden>
+                        <label class="control-label col-sm-1" for="module">模块</label>
+                        <div class="col-sm-2">
+                            <select class="form-control required" multiple name="module" id="module">
                                 <option value="">-请选择-</option>
                             </select>
                         </div>
@@ -77,13 +75,13 @@
                         <div class="col-sm-2">
                             <input type="text" class="form-control" id="casename1" size="20">
                         </div>
-                        <!--<label class="control-label col-sm-1" for="ipList" id="ipListLabel">设备列表</label>-->
-                        <!--<div class="col-sm-1">-->
-                            <!--<select class="form-control required" multiple name="ipList" id="ipList">-->
-                            <!--</select>-->
-                        <!--</div>-->
-                        <label class="control-label col-sm-1" for="browserList">浏览器</label>
-                        <div class="col-sm-2">
+                        <label class="control-label col-sm-1" for="ipList" id="ipListLabel" hidden>设备列表</label>
+                        <div class="col-sm-1" hidden>
+                            <select class="form-control required" multiple name="ipList" id="ipList">
+                            </select>
+                        </div>
+                        <label class="control-label col-sm-1" for="browserList" hidden>浏览器</label>
+                        <div class="col-sm-2" hidden>
                             <select class="form-control required" multiple name="browserList" id="browserList">
                                 <option value="" selected="selected">-请选择-</option>
                                 <option value="Chrome">Chrome</option>
@@ -96,7 +94,7 @@
                                     onclick="return searchTestBatch1({{id}})">查询
                             </button>
                             <button id="btn_reset1" type="button" class="btn btn-default"
-                                    onclick="return initPage({{id}})" >重置
+                                    onclick="return initPage({{id}})">重置
                             </button>
                             <button id="btn_run_all" type="button" class="btn btn-default"
                                     onclick="window.location.href=('/test_batch_detail?test_suite_id={{id}}')">执行情况
@@ -107,7 +105,7 @@
                 </form>
                 <!--</form>-->
                 <div id="toolbar" class="btn-group">
-                    <button id="btn_attach" type="button" class="btn btn-primary" onclick="attachTestCase({{id}})">
+                    <button id="btn_attach" type="button" class="btn btn-default" onclick="attachTestCase({{id}})">
                         <span class="glyphicon" aria-hidden="true"></span>关联
                     </button>
                 </div>
@@ -119,14 +117,14 @@
 </div>
 </div>
 <style>
-.error{
-	color:red;
-}
-
+    .error {
+        color: red;
+    }
 </style>
 
 </div>
 </div>
 </div>
 </div>
+
 {% endblock %}
